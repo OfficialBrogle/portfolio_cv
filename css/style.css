@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+body {
+    color: #2f2f2f;
+    font: 0.9em/1.35em 'avant garde', 'century Gothic', sans-serif;
+    padding: 1.4em
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+p {
+    margin: 0;
+    font-size: 18px
+}
+
+.group {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
