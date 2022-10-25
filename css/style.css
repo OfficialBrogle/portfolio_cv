@@ -11,7 +11,8 @@ html {
 body {
     color: #2f2f2f;
     font: 0.9em/1.35em 'avant garde', 'century Gothic', sans-serif;
-    padding: 1.4em
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    width: 100%
 }
 
 img {
@@ -25,6 +26,17 @@ p {
     font-size: 18px
 }
 
+ul {
+    list-style: none;
+    display: flex
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 .group {
     content: " ";
     display: table;
@@ -32,4 +44,118 @@ p {
 
 .group:after {
     clear: both;
+}
+
+header {
+    width: 100%;
+    background-color: #008F6E;
+}
+
+.float-left {
+    max-width: 40%;
+    position: absolute;
+}
+
+.float-left li {
+    margin-right: 1em;
+    background-color: #4AD9CA;
+    padding: 0.7em;
+    border-radius: 0.8em;
+    min-width: 7em;
+    text-align: center;
+}
+
+.float-left a {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    max-width: 40%;
+    float: right;
+    align-items: baseline;
+    padding-left: 0;
+    padding-right: 2em
+}
+
+.float-right li {
+    margin-right: 1em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.float-right li:last-child {
+    width: 100%;
+    padding: 0.6em;
+    margin-right: 0;
+    background-color: #04D99D;
+    border-radius: 1em;
+    box-shadow: 3px 3px #b1b1b1;
+}
+
+.float-right li:last-child:hover {
+    background-color: #06f8b3;
+    color: black;
+    box-shadow: none
+}
+
+.icons {
+    color: #ba3329;
+    font-size: 48px
+}
+
+.cv {
+    font-size: 1em
+}
+
+.img {
+    display: block
+}
+
+.img img {
+    max-width: 250px;
+    margin-top: 5em;
+}
+
+.popis {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    background: #4AD9CA;
+    border: 0.7em solid white;
+    border-radius: 1.9em;
+    box-shadow: 4px 4px #b1b1b1;
+}
+
+.popis h1 {
+    text-align: center
+}
+
+.popis p {
+    max-width: 300px;
+    text-align: center;
+    margin: 10px 10px 10px;
+}
+
+.btn-small {
+    background: #4AD9CA;
+    border: 0.5em solid white;
+    border-radius: 1.4em;
+    box-shadow: 2px 2px #b1b1b1;
+    -webkit-border-radius: 1.4em;
+    -moz-border-radius: 1.4em;
+    -ms-border-radius: 1.4em;
+    -o-border-radius: 1.4em;
+}
+
+.btn-small:hover {
+    background-color: #3db1a5;
+    box-shadow: none;
+    border: 0.5em solid #e1e0e0;
 }
